@@ -8,8 +8,8 @@
   #include "config_secrets.h"
 #else
   #warning "config_secrets.h not found - using placeholder WiFi credentials"
-  #define WIFI_SSID "YOUR_WIFI_SSID"
-  #define WIFI_PASS "YOUR_WIFI_PASSWORD"
+  #define WIFI_SSID "your-ssid"
+  #define WIFI_PASS "your-password"
 #endif
 
 #define HOSTNAME        "signboard"  // reachable at http://signboard.local
