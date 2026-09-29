@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="SignBoard">
+  <meta name="theme-color" content="#0b0d10">
+  <title>SignBoard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="toolbar">
+    <span id="status" class="status" role="status" aria-live="polite">Connecting…</span>
+    <label class="toggle"><input type="checkbox" id="live" checked> Live</label>
+    <button id="clear" type="button">Clear</button>
+    <button id="submit" type="button" class="primary">Send</button>
+  </header>
+
+  <main class="stage">
+    <!-- Drawn at the OLED's real resolution and scaled up, so what you see is what the OLED shows. -->
+    <canvas id="pad" width="128" height="64" aria-label="Drawing pad mirrored to the OLED display"></canvas>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
